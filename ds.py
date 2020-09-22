@@ -322,21 +322,7 @@ def get_msg_from_server(sock):
 def close_connection_with_server(sock):
 #( info about the function )
     sock.close()
-"""  
-def main():
-    turnOnDetection()
-    socket = create_connect_socket()
-    serverMsg = ""
-    doLogin(socket)
-    while serverMsg != "99":
-        
-        send_msg(new_msg, socket)
-        serverMsg = get_msg(socket)
-        print (serverMsg)
-        #if server 
-    close_connection(socket)
-    print (lp2det)
-"""
+
 
 def checkNumber(serverMsg):
     if  serverMsg == "The number is not in the Data Base":
@@ -362,21 +348,7 @@ def doLogin(server_sock, app_sock):
     while try2Login(server_sock, app_sock):
         print ("Bad login - wait for new login")
         
-"""    
-def main():
-    turnOnDetection()
-    app_sock = create_socket_for_app()
-    server_sock = create_connect_socket_for_server()
-    doLogin(server_sock, app_sock)
-    print ("conected lets go!")
-    while True:
-        msgSend = buildRequest()
-        send_msg_to_server(server_sock, msgSend)
-        serverMsg = get_msg_from_server(server_sock)
-        if checkNumber(serverMsg):
-            send_msg_to_app(sock, serverMsg, app_addr)
-    close_socket(sock)
-"""
+ 
 def main():
     turnOnDetection()
     app_sock = create_socket_for_app()
