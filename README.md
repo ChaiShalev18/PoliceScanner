@@ -1,3 +1,3 @@
 # PoliceScanner
 
-automatic number-plate recognition
+Automatic number-plate recognition
